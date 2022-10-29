@@ -6,20 +6,17 @@ abstract class Character {
     protected int agility;
     protected int wit;
 
-    Character(String name, String RPGClass)
+    Character(String name)
     {
         this.name = name;
-        this.RPGClass = RPGClass;
+        this.RPGClass = "Character";
         this.life = 60;
         this.strength = 2;
         this.agility = 2;
         this.wit = 2;
     }
 
-    public void attack(String weapon)
-    {
-        System.out.println(this.name + " : Rrrrrrrrr....");
-    }
+    public abstract void attack(String weapon);
 
     public String getName()
     {

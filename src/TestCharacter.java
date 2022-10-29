@@ -1,6 +1,10 @@
 class TestCharacter extends Character {
 
-    TestCharacter(String name, String RPGClass){
-        super(name, RPGClass);
+    TestCharacter(String name){
+        super(name);
+    }
+
+    public void attack(String weapon){
+        System.out.println(this.name + ": Rrrrrr....");
     }
 }
