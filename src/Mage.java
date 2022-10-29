@@ -15,9 +15,13 @@ class Mage extends Character{
         if (weapon == "magic" || weapon == "wand"){
             System.out.println(this.name + ": Rrrrrr....");
            System.out.println(this.name + ": Feel the power of my "+weapon);
-        }   else {
+        }   
+        if (weapon == "") {
+            throw new WaeponException();
+        }
+        else {
             throw new WaeponException("I don\'t need this stupid "+ weapon +" Don\'t misjudge my powers !");
-        } 
+        }
     }
 
     public void tryAttack(String weapon) throws WaeponException {

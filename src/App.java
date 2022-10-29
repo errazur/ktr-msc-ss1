@@ -12,8 +12,16 @@ public class App {
         Character mage = new Mage("Harry");
         Character warrior = new Warrior("Gromash");
 
-        mage.tryAttack("wood");
-        warrior.tryAttack("");
+        warrior.tryAttack("screwdriver");
+        mage.tryAttack("hammer");
+        warrior.tryAttack("hammer");
+        try {
+            mage.attack("");
+        } catch (WaeponException e) {
+            System.out.println(e.getMessage());
+        }
+        // mage.attack("magic");
+        // warrior.attack("hammer");
         // warrior.moveRight();
         // warrior.moveLeft();
         // warrior.moveBack();

@@ -14,9 +14,11 @@ public class Warrior extends Character {
         if (weapon == "hammer" || weapon == "sword") {
             System.out.println(this.name + ": Rrrrrr....");
             System.out.println(this.name + ": I'll crush you with my " + weapon);
-        } else if (weapon == "") {
+        }
+        if (weapon == "") {
             throw new WaeponException();
-        }   else {
+        }   
+        else {
             throw new WaeponException("A "+ weapon + "?? What should I do with this ?!");
         }
     }
@@ -25,7 +27,7 @@ public class Warrior extends Character {
         try {
             attack(weapon);
         }   catch (WaeponException e) {
-            // System.out.println(e.getMessage());
+            System.out.println(e.getMessage());
         }
     }
 
