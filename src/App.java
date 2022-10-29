@@ -11,8 +11,18 @@ public class App {
 
         Character mage = new Mage("Harry");
         Character warrior = new Warrior("Gromash");
-        
-        mage.attack("wand");
-        warrior.attack("hammer");
+        // mage.attack("wand");
+        // warrior.attack("hammer");
+        // warrior.moveRight();
+        // warrior.moveLeft();
+        // warrior.moveBack();
+        // warrior.moveForward();
+        // mage.moveRight();
+        // mage.moveLeft();
+        // mage.moveBack();
+        // mage.moveForward();
+
+        warrior.unleash();
+        mage.unleash();
     }
 }

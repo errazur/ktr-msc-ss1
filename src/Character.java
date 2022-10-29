@@ -1,4 +1,4 @@
-abstract class Character {
+abstract class Character implements Movable{
     protected String name;
     protected String RPGClass;
     protected int life;
@@ -17,6 +17,24 @@ abstract class Character {
     }
 
     public abstract void attack(String weapon);
+
+    public abstract void unleash();
+
+    public void moveRight(){
+        System.out.println(this.name + ": Move Right");
+    }
+
+    public void moveLeft(){
+        System.out.println(this.name + ": Move Left");
+    }
+
+    public void moveForward(){
+        System.out.println(this.name + ": Move Forward");
+    }
+
+    public void moveBack(){
+        System.out.println(this.name + ": Move Back");
+    }
 
     public String getName()
     {

@@ -20,4 +20,25 @@ class Mage extends Character{
             System.out.println(this.name + ": I can't attack");
         } 
     }
+
+    public void unleash()
+    {
+        System.out.println(this.name + ": Unleash his weapon with magic.");
+    }
+
+    public void moveRight(){
+        System.out.println(this.name + ": Move Right futively.");
+    }
+
+    public void moveLeft(){
+        System.out.println(this.name + ": Move Left futively.");
+    }
+
+    public void moveForward(){
+        System.out.println(this.name + ": Move Forward futively.");
+    }
+
+    public void moveBack(){
+        System.out.println(this.name + ": Move Back futively.");
+    }
 }
