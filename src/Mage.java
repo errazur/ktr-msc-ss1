@@ -10,15 +10,22 @@ class Mage extends Character{
         System.out.println(this.name + ": May the gods be with me.");
     }
 
-    public void attack(String weapon)
+    public void attack(String weapon)throws WaeponException
     {
-        System.out.println(this.name + ": Rrrrrr....");
         if (weapon == "magic" || weapon == "wand"){
-            
+            System.out.println(this.name + ": Rrrrrr....");
            System.out.println(this.name + ": Feel the power of my "+weapon);
         }   else {
-            System.out.println(this.name + ": I can't attack");
+            throw new WaeponException("I don\'t need this stupid "+ weapon +" Don\'t misjudge my powers !");
         } 
+    }
+
+    public void tryAttack(String weapon) throws WaeponException {
+        try {
+            attack(weapon);
+        }   catch (WaeponException e) {
+            System.out.println(e.getMessage());
+        }
     }
 
     public void unleash()

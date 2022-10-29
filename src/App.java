@@ -11,8 +11,9 @@ public class App {
 
         Character mage = new Mage("Harry");
         Character warrior = new Warrior("Gromash");
-        // mage.attack("wand");
-        // warrior.attack("hammer");
+
+        mage.tryAttack("wood");
+        warrior.tryAttack("");
         // warrior.moveRight();
         // warrior.moveLeft();
         // warrior.moveBack();
@@ -22,7 +23,7 @@ public class App {
         // mage.moveBack();
         // mage.moveForward();
 
-        warrior.unleash();
-        mage.unleash();
+        // warrior.unleash();
+        // mage.unleash();
     }
 }

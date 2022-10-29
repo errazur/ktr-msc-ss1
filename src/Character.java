@@ -16,7 +16,9 @@ abstract class Character implements Movable{
         this.wit = 2;
     }
 
-    public abstract void attack(String weapon);
+    public abstract void attack(String weapon) throws WaeponException;
+
+    public abstract void tryAttack(String weapon) throws WaeponException;
 
     public abstract void unleash();
 
